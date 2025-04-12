@@ -56,7 +56,7 @@ Just add the following `<script>` tag anywhere in your HTML file:
 
     <!-- include siteviews script tags  -->
     <script
-      src="https://unpkg.com/siteviews@1.0.7/package.js"
+      src="https://unpkg.com/siteviews@1.2.1/dist/index.js"
       type="application/javascript"
       scriptfor="siteviews"
       project-name="my-awesome-site"
