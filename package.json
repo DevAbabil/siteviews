@@ -1,0 +1,47 @@
+{
+  "name": "siteviews",
+  "version": "1.2.1",
+  "description": "Plug-and-play website views counter with zero configuration. Just add one script tag with a few attributes to start tracking visits and showing customizable view counts, user info, and toast notifications.",
+  "scripts": {
+    "build": "tsup --watch"
+  },
+  "main": "./dist/index.js",
+  "type": "commonjs",
+  "sideEffects": true,
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "siteviews",
+    "view counter",
+    "visitor counter",
+    "website analytics",
+    "website views",
+    "toast notification",
+    "toastify",
+    "tracking",
+    "web counter",
+    "simple analytics",
+    "html widget",
+    "page views",
+    "no backend",
+    "zero config",
+    "client-side tracking",
+    "plug and play"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevAbabil/siteviews.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DevAbabil/siteviews/issues"
+  },
+  "homepage": "https://github.com/DevAbabil/siteviews#readme",
+  "devDependencies": {
+    "slugify": "^1.6.6",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.3"
+  }
+}
