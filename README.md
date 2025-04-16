@@ -10,14 +10,15 @@ Just add the following `<script>` tag anywhere in your HTML file:
 
 ```html
 <script
-  src="https://unpkg.com/siteviews@1.0.7/package.js"
+  src="https://unpkg.com/siteviews@2.0.0/dist/index.js"
   type="application/javascript"
   scriptfor="siteviews"
-  project-name="my-project"
+  project-name="my-awesome-site"
   output-element-id="views"
-  refresh="10"
+  refresh="15"
   user-info
   toast
+  suppressLogs
 ></script>
 ```
 
@@ -31,11 +32,12 @@ Just add the following `<script>` tag anywhere in your HTML file:
 
 ### 🔄 Optional Attributes
 
-| Attribute   | Description                                                                                  |
-| ----------- | -------------------------------------------------------------------------------------------- |
-| `refresh`   | Number of seconds between auto-refreshes (minimum: `10`)                                     |
-| `user-info` | Include basic user and device information in tracking (no personal data)                     |
-| `toast`     | Enable a welcome toast notification using [Toastify](https://github.com/apvarun/toastify-js) |
+| Attribute      | Description                                                                                  |
+| -------------- | -------------------------------------------------------------------------------------------- |
+| `refresh`      | Number of seconds between auto-refreshes (minimum: `10`)                                     |
+| `user-info`    | Include basic user and device information in tracking (no personal data)                     |
+| `toast`        | Enable a welcome toast notification using [Toastify](https://github.com/apvarun/toastify-js) |
+| `suppressLogs` | Mute all console logs/warnings from SiteViews.                                               |
 
 ---
 
@@ -56,7 +58,7 @@ Just add the following `<script>` tag anywhere in your HTML file:
 
     <!-- include siteviews script tags  -->
     <script
-      src="https://unpkg.com/siteviews@1.2.1/dist/index.js"
+      src="https://unpkg.com/siteviews@2.0.0/dist/index.js"
       type="application/javascript"
       scriptfor="siteviews"
       project-name="my-awesome-site"
@@ -64,6 +66,7 @@ Just add the following `<script>` tag anywhere in your HTML file:
       refresh="15"
       user-info
       toast
+      suppressLogs
     ></script>
   </body>
 </html>
@@ -100,7 +103,7 @@ Uses [Tsup](https://tsup.egoist.dev/) and TypeScript for bundling.
 Hosted on [UNPKG](https://unpkg.com/):
 
 ```txt
-https://unpkg.com/siteviews@1.0.7/package.js
+https://unpkg.com/siteviews@1.2.1/dist/index.js
 ```
 
 ---
