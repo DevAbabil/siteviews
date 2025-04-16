@@ -7,3 +7,4 @@ export * from "./_ipDetails";
 export * from "./_deviceInfo";
 export * from "./_retriveUserInfo";
 export * from "./_displayCount";
+export * from "./_logger";
