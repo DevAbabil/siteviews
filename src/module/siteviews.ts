@@ -19,11 +19,12 @@ import {
   SITEVIEWS_API,
   displayCount,
   retriveUserInfo,
+  log,
 } from "@/shared";
 
 if (isLocal) {
-  console.warn("To use 'SiteViews', Please Deploy your website at first.");
-  console.warn("SiteViews Does not work in in Local Development");
+  log.warn("To use 'SiteViews', Please Deploy your website at first.");
+  log.warn("SiteViews Does not work in in Local Development");
 }
 
 // Load toastify-js package dynamically
@@ -51,10 +52,10 @@ const requestInit = async () => {
     if (res.status === 200) {
       toast.show(`Welcome to ${dom.projectName}`);
     } else {
-      console.warn((await res.json())?.message);
+      log.warn((await res.json())?.message);
     }
   } catch (_) {
-    console.warn("failed to enteract with stieviews api");
+    log.warn("failed to enteract with stieviews api");
   }
 };
 
@@ -64,7 +65,7 @@ if (!isVisited && !isLocal) {
 
 displayCount();
 
-if (dom.refreshTime) {
+if (dom.refreshTime && !isLocal) {
   const timer = setInterval(() => {
     displayCount();
   }, dom.refreshTime);

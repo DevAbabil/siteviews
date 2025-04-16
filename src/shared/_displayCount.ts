@@ -1,4 +1,4 @@
-import { dom, SITEVIEWS_API } from "@/shared";
+import { dom, log, SITEVIEWS_API } from "@/shared";
 
 export const displayCount = async () => {
   try {
@@ -16,7 +16,7 @@ export const displayCount = async () => {
       }
     }
   } catch (error) {
-    console.warn(
+    log.warn(
       `Faild to load count value in '${dom.outPutElement.getAttribute(
         "id"
       )}'. refresh the page!`

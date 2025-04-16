@@ -1,4 +1,4 @@
-import { SITEVIEWS_API, dom } from "@/shared";
+import { SITEVIEWS_API, dom, log } from "@/shared";
 
 const fetched = async () => {
   try {
@@ -13,7 +13,7 @@ const fetched = async () => {
       throw Error();
     }
   } catch (_) {
-    console.warn("Faild to retrive user info");
+    log.warn("Faild to retrive user info");
   }
 };
 

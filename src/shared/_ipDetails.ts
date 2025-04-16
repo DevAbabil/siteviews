@@ -1,7 +1,7 @@
 // Fetches geolocation data based on the user's IP address from a public API.
 // Returns only the fields with truthy values to keep the response clean.
 
-import { GEO_IP_LOOKUP_API } from "@/shared";
+import { GEO_IP_LOOKUP_API, log } from "@/shared";
 
 export const ipDetails = async (): Promise<object> => {
   try {
@@ -24,7 +24,7 @@ export const ipDetails = async (): Promise<object> => {
 
     return {};
   } catch (error) {
-    console.warn("Failed to collect User IP Details:", error);
+    log.warn("Failed to collect User IP Details:", error);
     return {};
   }
 };

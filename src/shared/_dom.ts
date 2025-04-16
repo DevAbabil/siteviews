@@ -19,7 +19,7 @@
  * Documentation: ${DOC_SOURCE}
  */
 
-import { DOC_SOURCE } from "@/shared";
+import { DOC_SOURCE, log } from "@/shared";
 import slugify from "slugify";
 
 export const dom = {
@@ -37,7 +37,7 @@ export const dom = {
     let project_name = this.siteViewsScript.getAttribute("project-name");
 
     if (!project_name) {
-      console.warn(
+      log.warn(
         `Please provide a project name using the attribute 'project-name="your-project-name"' in the siteviews script tag. This warning will disappear once the project name is set. Read the documentation: ${DOC_SOURCE}`
       );
       project_name = "siteviews";
@@ -64,26 +64,28 @@ export const dom = {
     return outputElement;
   },
 
-  get refreshTime(): number {
-    let inputRefresh = Number(this.siteViewsScript.getAttribute("refresh"));
+  get suppressLogs(): boolean {
+    return this.siteViewsScript.hasAttribute("suppressLogs");
+  },
 
-    if (!inputRefresh) inputRefresh = 10;
+  get refreshTime(): number | null {
+    let inputRefresh: unknown = this.siteViewsScript.getAttribute("refresh");
 
-    if (isNaN(inputRefresh)) {
+    if (inputRefresh && isNaN(inputRefresh as number)) {
       inputRefresh = 10;
       throw Error(
         `The 'refresh' attribute value must be an integer. Please recheck your siteviews script tag.`
       );
     }
 
-    if (inputRefresh < 10) {
+    if (inputRefresh && (inputRefresh as number) < 10) {
       inputRefresh = 10;
-      console.warn(
+      log.warn(
         `You've set a refresh value less than 10, which is not allowed. The minimum acceptable refresh value is 10.`
       );
     }
 
-    return inputRefresh * 1000;
+    return (inputRefresh as number) * 1000;
   },
 
   get shouldGetUserInfo(): boolean {
