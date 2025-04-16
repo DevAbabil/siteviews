@@ -103,7 +103,7 @@ Uses [Tsup](https://tsup.egoist.dev/) and TypeScript for bundling.
 Hosted on [UNPKG](https://unpkg.com/):
 
 ```txt
-https://unpkg.com/siteviews@1.2.1/dist/index.js
+https://unpkg.com/siteviews@2.0.0/dist/index.js
 ```
 
 ---
