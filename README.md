@@ -10,7 +10,7 @@ Just add the following `<script>` tag anywhere in your HTML file:
 
 ```html
 <script
-  src="https://unpkg.com/siteviews@2.0.0/dist/index.js"
+  src="https://unpkg.com/siteviews@2.0.1/dist/index.js"
   type="application/javascript"
   scriptfor="siteviews"
   project-name="my-awesome-site"
@@ -58,7 +58,7 @@ Just add the following `<script>` tag anywhere in your HTML file:
 
     <!-- include siteviews script tags  -->
     <script
-      src="https://unpkg.com/siteviews@2.0.0/dist/index.js"
+      src="https://unpkg.com/siteviews@2.0.1/dist/index.js"
       type="application/javascript"
       scriptfor="siteviews"
       project-name="my-awesome-site"
@@ -103,7 +103,7 @@ Uses [Tsup](https://tsup.egoist.dev/) and TypeScript for bundling.
 Hosted on [UNPKG](https://unpkg.com/):
 
 ```txt
-https://unpkg.com/siteviews@2.0.0/dist/index.js
+https://unpkg.com/siteviews@2.0.1/dist/index.js
 ```
 
 ---
