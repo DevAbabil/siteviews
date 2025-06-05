@@ -60,7 +60,7 @@ export const toast = {
       document.querySelector("link[siteviews-toast='css']")?.remove();
       document.querySelector("script[siteviews-toast='js']")?.remove();
       clearTimeout(timer);
-    }, TOAST_DURATION + 1000);
+    }, TOAST_DURATION + 5000);
   },
 
   /**
