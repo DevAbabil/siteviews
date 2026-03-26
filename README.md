@@ -1,12 +1,12 @@
-# 📊 SiteViews
+# SiteViews
 
-**SiteViews** is a lightweight, zero-config, plug-and-play website views counter. Track page visits, show view counts, collect optional user info, and display toast notifications — all by adding a single script tag to your HTML.
+SiteViews is a lightweight, zero-config website views counter. Track page visits, display view counts, collect optional user info, and show toast notifications — all with a single script tag.
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
-Just add the following `<script>` tag anywhere in your HTML file:
+Add the following `<script>` tag anywhere in your HTML:
 
 ```html
 <script
@@ -22,7 +22,7 @@ Just add the following `<script>` tag anywhere in your HTML file:
 ></script>
 ```
 
-### ✅ Required Attributes
+### Required Attributes
 
 | Attribute           | Description                                                       |
 | ------------------- | ----------------------------------------------------------------- |
@@ -30,18 +30,17 @@ Just add the following `<script>` tag anywhere in your HTML file:
 | `project-name`      | Unique identifier for your project                                |
 | `output-element-id` | The `id` of the HTML element where the view count should be shown |
 
-### 🔄 Optional Attributes
+### Optional Attributes
 
 | Attribute      | Description                                                                                  |
 | -------------- | -------------------------------------------------------------------------------------------- |
 | `refresh`      | Number of seconds between auto-refreshes (minimum: `10`)                                     |
-| `user-info`    | Include basic user and device information in tracking (no personal data)                     |
 | `toast`        | Enable a welcome toast notification using [Toastify](https://github.com/apvarun/toastify-js) |
-| `suppressLogs` | Mute all console logs/warnings from SiteViews.                                               |
+| `suppressLogs` | Mute all console logs and warnings from SiteViews                                            |
 
 ---
 
-## 💡 Example
+## Example
 
 ```html
 <!DOCTYPE html>
@@ -56,15 +55,13 @@ Just add the following `<script>` tag anywhere in your HTML file:
       <p>Views: <span id="views">Loading...</span></p>
     </div>
 
-    <!-- include siteviews script tags  -->
     <script
-      src="https://unpkg.com/siteviews@2.0.1/dist/index.js"
+      src="https://unpkg.com/siteviews@2.0.3/dist/index.js"
       type="application/javascript"
       scriptfor="siteviews"
       project-name="my-awesome-site"
       output-element-id="views"
       refresh="15"
-      user-info
       toast
       suppressLogs
     ></script>
@@ -74,46 +71,45 @@ Just add the following `<script>` tag anywhere in your HTML file:
 
 ---
 
-## ⚙️ Features
+## Features
 
-- 📈 Real-time view count updates
-- 🔁 Auto refresh every X seconds
-- 🧠 Optional device + browser info
-- 🔔 Beautiful welcome toast via CDN (Toastify)
-- 🧩 No NPM or module bundlers needed
+- Real-time view count updates
+- Auto-refresh on a configurable interval
+- Welcome toast notification via Toastify (CDN)
+- No npm or module bundler required
 
 ---
 
-## 🛠 Development
+## Development
 
 ```bash
-# install dependencies
+# Install dependencies
 npm install
 
-# build in watch mode
+# Build in watch mode
 npm run build
 ```
 
-Uses [Tsup](https://tsup.egoist.dev/) and TypeScript for bundling.
+Uses [tsup](https://tsup.egoist.dev/) and TypeScript for bundling.
 
 ---
 
-## 📦 CDN
+## CDN
 
 Hosted on [UNPKG](https://unpkg.com/):
 
-```txt
-https://unpkg.com/siteviews@2.0.1/dist/index.js
+```
+https://unpkg.com/siteviews@2.0.3/dist/index.js
 ```
 
 ---
 
-## 📄 License
+## License
 
 MIT © [DevAbabil](https://github.com/DevAbabil)
 
 ---
 
-## 🙌 Contributing
+## Contributing
 
-Found a bug or want a new feature? Feel free to [open an issue](https://github.com/DevAbabil/siteviews/issues)
+Found a bug or want a new feature? Feel free to [open an issue](https://github.com/DevAbabil/siteviews/issues).
