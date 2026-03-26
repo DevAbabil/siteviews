@@ -4,13 +4,13 @@
  * @author          Md Ababil Hossain (https://devababil.com)
  * @website         https://siteviews.netlify.app
  * @license         MIT
- * @version         2.0.2
+ * @version         2.0.3
  * @repository      https://github.com/DevAbabil/siteviews
  * @created         2024-11-10
- * @lastModified    2025-06-05
+ * @lastModified    2026-03-26
  * ------------------------------------------------------------
- * 🧠 Built with passion and simplicity in mind.
- * 🚀 Lightweight, flexible, and developer-friendly.
- * 💡 Contributions are welcome!
+ * Built with passion and simplicity in mind.
+ * Lightweight, flexible, and developer-friendly.
+ * Contributions are welcome!
  * ------------------------------------------------------------
  */
