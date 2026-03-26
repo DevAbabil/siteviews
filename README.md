@@ -10,13 +10,12 @@ Add the following `<script>` tag anywhere in your HTML:
 
 ```html
 <script
-  src="https://unpkg.com/siteviews@2.0.1/dist/index.js"
+  src="https://unpkg.com/siteviews@2.0.4/dist/index.js"
   type="application/javascript"
   scriptfor="siteviews"
   project-name="my-awesome-site"
   output-element-id="views"
   refresh="15"
-  user-info
   toast
   suppressLogs
 ></script>
@@ -56,7 +55,7 @@ Add the following `<script>` tag anywhere in your HTML:
     </div>
 
     <script
-      src="https://unpkg.com/siteviews@2.0.3/dist/index.js"
+      src="https://unpkg.com/siteviews@2.0.4/dist/index.js"
       type="application/javascript"
       scriptfor="siteviews"
       project-name="my-awesome-site"

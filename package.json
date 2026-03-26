@@ -1,6 +1,6 @@
 {
   "name": "siteviews",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "Plug-and-play website views counter with zero configuration. Just add one script tag with a few attributes to start tracking visits and showing customizable view counts, user info, and toast notifications.",
   "scripts": {
     "build": "tsup"
